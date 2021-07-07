@@ -102,14 +102,23 @@ void tampil(void)
     glVertex3f(-25.0, 160.0, -30.0);
     glEnd();
 
-    /**  //atas
+     //atas
       glBegin(GL_QUADS);
-      glColor3f(0.0, 0.5, 1.0);
-      glVertex3f(-10.0, 10.0 + 10.0, 10.0);
-      glVertex3f(10.0, -10.0 + 20.0, 10.0);
-      glVertex3f(10.0, -10.0 + 20.0, -10.0);
-      glVertex3f(-10.0, 10.0 + 10.0, -10.0);
-      glEnd();**/
+      glColor3f(0.9, 0.9, 0.9);
+      glVertex3f(-25.0, 158.1, 10.0);
+      glVertex3f(12.0, 158.1, 10.0);
+      glVertex3f(12.0, 158.1, -30.0);
+      glVertex3f(-25.0, 158.1, -30.0);
+      glEnd();
+
+        //atas
+      glBegin(GL_QUADS);
+      glColor3f(0.8, 0.8, 0.8);
+      glVertex3f(4.1, 168.0, 15.0);
+      glVertex3f(25.0, 168.0, 15.0);
+      glVertex3f(25.0, 168.0, -5.0);
+      glVertex3f(4.1, 168.0, -5.0);
+      glEnd();
 
       //depan2
     glPushMatrix();
@@ -874,7 +883,7 @@ void tampil(void)
 
     //pondasi
     glBegin(GL_QUADS);
-    glColor3f(1.0, 1.0, 0.0);
+    glColor3f(0.0, 1.0, 0.0);
     glVertex3f(-100.0, -30.0, 50.0);
     glVertex3f(100.0, -30.0, 50.0);
     glVertex3f(100.0, -30.0, -80.0);
@@ -915,12 +924,12 @@ void tampil(void)
     glVertex3f(-100.0, -35.0, -80.0);
     glEnd();
 
-    //bawah
+    //bawahpondasi
     glBegin(GL_QUADS);
-    glColor3f(1.0, 1.0, 0.0);
-    glVertex3f(-160.0, -35.0, 90.0);
-    glVertex3f(160.0, -35.0, 90.0);
-    glVertex3f(160.0, -35.0, -200.0);
+    glColor3f(0.50, 1.0, 0.0);
+    glVertex3f(-160.0, -35.0, 150.0);
+    glVertex3f(200.0, -35.0, 150.0);
+    glVertex3f(200.0, -35.0, -200.0);
     glVertex3f(-160.0, -35.0, -200.0);
     glEnd();
 
@@ -6363,8 +6372,65 @@ void tampil(void)
     glVertex3f(-95.0, 28.1, -40.0);
     glEnd();
 
+    //Jalan
+    glBegin(GL_QUADS);
+    glColor3f(0.60, 0.40, 0.14);
+    glVertex3f(10.0, -34.1, -155.0);
+    glVertex3f(200.0, -34.1, -155.0);
+    glVertex3f(200.0, -34.1, -110.0);
+    glVertex3f(10.0, -34.1, -110.0);
 
+    glVertex3f(135.0, -34.1, -165.0);
+    glVertex3f(160.0, -34.1, -165.0);
+    glVertex3f(160.0, -34.1, -55.0);
+    glVertex3f(135.0, -34.1, -55.0);
 
+    glVertex3f(100.0, -34.1, -80.0);
+    glVertex3f(135.0, -34.1, -80.0);
+    glVertex3f(135.0, -34.1, -55.0);
+    glVertex3f(100.0, -34.1, -55.0);
+
+    //jalanmiring
+    glVertex3f(175.0, -34.1, -135.0);
+    glVertex3f(200.0, -34.1, -115.0);
+    glVertex3f(110.0, -34.1, 150.0);
+    glVertex3f(130.0, -34.1, 150.0);
+
+    //parkiran
+    glVertex3f(45.0, -34.1, -195.0);
+    glVertex3f(195.0, -34.1, -195.0);
+    glVertex3f(195.0, -34.1, -160.0);
+    glVertex3f(45.0, -34.1, -160.0);
+
+    //parkiran2
+    glVertex3f(-10.0, -34.1, 55.0);
+    glVertex3f(145.0, -34.1, 55.0);
+    glVertex3f(110.0, -34.1, 150.0);
+    glVertex3f(-10.0, -34.1, 150.0);
+
+    glVertex3f(105.0, -34.1, 5.0);
+    glVertex3f(160.0, -34.1, 5.0);
+    glVertex3f(145.0, -34.1, 55.0);
+    glVertex3f(105.0, -34.1, 55.0);
+    glEnd();
+    //taman
+        glBegin(GL_QUADS);
+    glColor3f(0.0, 1.0, 0.0);
+    glVertex3f(40.0, -33.4, -143.0);
+    glVertex3f(60.0, -33.4, -143.0);
+    glVertex3f(60.0, -33.4, -123.0);
+    glVertex3f(40.0, -33.4, -123.0);
+
+    glVertex3f(90.0, -33.4, -135.0);
+    glVertex3f(135.0, -33.4, -135.0);
+    glVertex3f(135.0, -33.4, -130.0);
+    glVertex3f(90.0, -33.4, -130.0);
+
+    glVertex3f(160.0, -33.4, -135.0);
+    glVertex3f(190.0, -33.4, -135.0);
+    glVertex3f(190.0, -33.4, -130.0);
+    glVertex3f(160.0, -33.4, -130.0);
+    glEnd();
     glPopMatrix();
     glutSwapBuffers();
 }
