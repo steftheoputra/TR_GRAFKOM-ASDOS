@@ -1,6 +1,6 @@
 #include<windows.h>
 #include<gl/glut.h>
-#include<math.h>
+
 void init(void);
 void tampil(void);
 void keyboard(unsigned char, int, int);
@@ -17,11 +17,6 @@ float ydiff = 0.0f;
 bool mouseDown = false;
 
 
-const double PI = 3.142857143;
-int i,radius,jumlah_titik,x_tengah,y_tengah;
-
-int gerak = 5;
-bool atas = true;
 
 float xmov = 0.0f;
 float ymov = 0.0f;
@@ -39,7 +34,6 @@ int main(int argc, char** argv)
     glutKeyboardFunc(keyboard);
     glutMouseFunc(mouse);
     glutMotionFunc(mouseMotion);
-
     glutReshapeFunc(ukuran);
     glutMainLoop();
     return 0;
@@ -57,7 +51,6 @@ void init(void)
 	glPointSize(5.0f);
 	gluOrtho2D(0.0, 300.0, 0.0, 300.0);
 	glPushMatrix();
-    glTranslatef( gerak, 0,0);
 }
 
 void tampil(void)
